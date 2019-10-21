@@ -9,6 +9,14 @@ const Content = styled.div`
   margin: 16px 0;
 `;
 
+const startYears = [];
+const endYears = [];
+
+for (let i = new Date().getFullYear(); i >= 1980; i--) {
+  startYears.push(i + '-01-01');
+  endYears.push(i + '-12-31');
+}
+
 const FilterDates = () => {
   const dispatch = useDispatch();
 
@@ -27,16 +35,6 @@ const FilterDates = () => {
 
     dispatch(Actions.fetchBooks());
   }
-
-  const startYears = [];
-  const endYears = [];
-
-  for (let i = new Date().getFullYear(); i >= 1980; i--) {
-    startYears.push(i + '-01-01');
-    endYears.push(i + '-12-31');
-  }
-
-  console.log('filters', filters)
 
   return (
     <React.Fragment>
