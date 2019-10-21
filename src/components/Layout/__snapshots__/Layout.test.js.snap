@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Layout> deve renderizar sem haver alteração na estrutura do componente 1`] = `
+<div
+  className="sc-bdVaJa jeXhSc"
+>
+  <div
+    className="sc-htpNat iIoqoj"
+  >
+    <nav
+      className="navbar navbar-expand-md"
+    >
+      <div
+        className="container"
+      >
+        <a
+          className="navbar-brand"
+          href="/"
+        >
+          <img
+            alt="Supero"
+            src="logo.svg"
+          />
+        </a>
+        <button
+          aria-label="Toggle navigation"
+          className="navbar-toggler"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="navbar-toggler-icon"
+          />
+        </button>
+      </div>
+    </nav>
+  </div>
+</div>
+`;

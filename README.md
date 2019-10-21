@@ -1,68 +1,51 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Foi usado boostrap para framework de estilo.
+Foi usado redux como para o flow de dados baseado na arquitetura flux.
 
-## Available Scripts
+## Instruções 
 
-In the project directory, you can run:
+### Para executar o projeto
+ 
+#### `npm run start`
 
-### `yarn start`
+### Para executar os tests
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### `npm run test`
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Para executar o build
 
-### `yarn test`
+#### `npm run build`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+### Estrutura do Projeto
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`/public`
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Neste diretório fica os arquivos que não são executados pelo React
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+`/src`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Neste diretório ficam todos os arquivos da aplicação que são executados pelo React
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`src/assets`
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Aqui ficam alguns arquivos estáticos de uso da aplicação por exemplo a logo
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+`src/components`
 
-## Learn More
+Aqui ficam os componentes de uso compartilhados da aplicação. São os componentes desvinculados ao core business da aplicação.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`src/pages`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Aqui ficam as páginas da aplicação, aonde por padrão adicionei um sufixo de 'Page' ao nome da pasta e do arquivo principal exportado. Dentro de cada página adotei o padrão de uso styled components para criar estilos nos componentes, sendo assim criei um arquivo styles.js exportando cada componente de estilo da tela. Criei também uma pasta components que serve para desmembrar alguns pequenos componentes contidos na tela para simplificar a visualização e manutenção.
 
-### Code Splitting
+`src/services`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Está pasta contém os arquivos responsaveis por prover a comunicação com os serviços externos e tratar regras de negócio de forma agnóstica a qualquer modelo de flow utilizado na aplicação.
 
-### Analyzing the Bundle Size
+`src/store`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Está pasta contém as actions, reducers e a store da aplicação. As actions e reducers estão organizados por contexto de negócio, por exemplo, existe uma action referente ao negócio de books, logo também foi criado um reducer para trabalhar com o retorno do estado do negócio de books.
 
-### Making a Progressive Web App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Link para ver o projeto no ar: 
