@@ -1,3 +1,6 @@
+Link para ver o projeto no ar: https://bit.ly/32yYfyJ
+
+Foi usado ReactJS.
 Foi usado boostrap para framework de estilo.
 Foi usado redux como para o flow de dados baseado na arquitetura flux.
 
@@ -48,4 +51,3 @@ Está pasta contém os arquivos responsaveis por prover a comunicação com os s
 Está pasta contém as actions, reducers e a store da aplicação. As actions e reducers estão organizados por contexto de negócio, por exemplo, existe uma action referente ao negócio de books, logo também foi criado um reducer para trabalhar com o retorno do estado do negócio de books.
 
 
-Link para ver o projeto no ar: 
